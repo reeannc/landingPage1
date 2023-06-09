@@ -124,7 +124,7 @@ font-size: 25px;
   margin-bottom: 20px;
 }
 
-.abtme{
+.moreabtme{
   background-color: transparent;
   border: 1px solid rgb(245, 242, 242);
   border-radius: 5px;
@@ -132,4 +132,50 @@ font-size: 25px;
   color: rgb(245, 242, 242);
   font-weight: 1;
   padding: 12px;
+}
+
+/*abtme*/
+.container2{
+  height: 500px;
+  background:rgba(166, 158, 158, 0.2);
+  display: grid;
+  grid-gap: 20px;
+  overflow: auto;
+}
+.abtme{
+  display: grid;
+  grid-template-areas:
+  "left right" ;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  border-radius: 50%;
+}
+.pic{
+  grid-area: left;
+  margin: 20px;
+  grid-gap: 300px;
+}
+.info{
+  display: grid;
+  grid-area: right;
+  margin: 20px;
+  justify-items: center;
+  font-size: 20px;
+}
+.linktores{
+  background-color: transparent;
+  border: 1px solid rgb(56, 54, 54);
+  border-radius: 5px;
+  font-size: 18px;
+  color: rgb(56, 54, 54);
+  font-weight: 1;
+  padding: 12px;
+}
+
+@media (max-width:1000px){
+  img{
+    display: none;
+  }
 }
