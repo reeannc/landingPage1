@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@300&display=swap" rel="stylesheet">
@@ -16,15 +17,15 @@
         <nav class="nav">
             <a href="#" class="toggleNav">Menu ☰</a>
             <ul>
-                <li><a href="#">Main</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#menu">Main</a></li>
+                <li><a href="#recentWork">Projects</a></li>
                 <li><a href="#">Resume</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#aboutMe">About</a></li>
                 <li><a href="#">Skills</a></li>
             </ul>
         </nav>
 
-        <div class="header">
+        <div class="header" id="menu">
             <div class="first-header">
                 <h1>My Resume</h1>
                 <h3>Passionate about changing the world with technology.</h3>
@@ -45,25 +46,41 @@
             </div>
         </div>
 
-        <div class="container2">
+        <div class="container2" id="aboutMe">
             <div class="abtme">
 
                 <div class="pic">
-                    <img src="https://images.squarespace-cdn.com/content/v1/5a045bf8a9db09cbf239e375/1656607867592-VVIWVIML89LYAJLYZCL1/Home+Page+Image+Weddings.jpg?format=1000w" style="max-width:300px; height: auto;">
+                    <img class="img1" src="https://images.squarespace-cdn.com/content/v1/5a045bf8a9db09cbf239e375/1656607867592-VVIWVIML89LYAJLYZCL1/Home+Page+Image+Weddings.jpg?format=1000w" style="max-width:300px; height: auto;">
                 </div>
                 
                 <div class="info">
                     <h2>About Me</h2>
-                    <p>My name is SuperMen. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                     <button type="button" class="linktores">Resume</button>
                 </div>    
-                
             </div>
         </div>
 
+        <div class="container" id="recentWork">
+            <h2 class="rw">Recent Work</h2>
+            <div class="gallery">
+                <a href="images/1.jpg" data-lightbox="pics" data-title="Design-1">
+                    <img src="images/1.jpg">
+                </a>
+                <a href="images/1.jpg" data-lightbox="pics" data-title="Design-2">
+                    <img src="images/2.jpg">
+                </a>
+                <a href="images/1.jpg" data-lightbox="pics" data-title="Design-3">
+                    <img src="images/3.jpg">
+                </a>
+            </div>
+        </div>
 
     </div>
-  
+<script src="lightbox-plus-jquery.js">
+</script>  
+<script src="lp.js"></script>
 </body>
 </html>
